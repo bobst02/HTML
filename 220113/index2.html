@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <title>HTML的基本結構_表格與框線的處理</title>
+</head>
+
+<body>
+  <header>
+    <center>
+      <h1>
+        <font color="#800">HTML的基本結構_表格與框線的處理</font>
+      </h1>
+    </center>
+    <hr>
+  </header>
+  <main>
+    <section>
+      <center>
+        <h2>表格與框線的處理</h2>
+      </center>
+      <hr width="50%" size="5" align="center" color="#333743">
+    </section>
+    <section>
+      <center>
+        <h3><u>3X4表格</u></h3>
+      </center>
+      <table border="1" width="80%" height="150" padding="3" spacing="0" align="center">
+        <!-- 建立表格 -->
+        <tr align="right" valign="top">
+          <td width="20%">AA</td>
+          <td width="30%">BB</td>
+          <td width="10%">CC</td>
+          <td width="40%">DD</td>
+        </tr>
+        <tr align="center" valign="bottom">
+          <td>11</td>
+          <td>22</td>
+          <td>33</td>
+          <td>44</td>
+        </tr>
+        <tr align="left" valign="baseline">
+          <td>ㄅㄅ</td>
+          <td>ㄆㄆ</td>
+          <td>ㄇㄇ</td>
+          <td>ㄈㄈ</td>
+        </tr>
+      </table>
+    </section>
+    <hr>
+    <section>
+      <center>
+        <h3><u>一3X4的表格_II_合併調整</u></h3>
+      </center>
+      <table align="center" width="80%" height="150" border="1" cellspacing="0">
+        <tr align="center" valign="middle" bgcolor="#DDD">
+          <th width="10%">A1</th>
+          <th width="30%">B1</th>
+          <th width="30%">C1</th>
+          <th width="30%">D1</th>
+        </tr>
+        <tr align="center">
+          <th rowspan="2" bgcolor="#DDD">A2 <br> A3</th>
+          <td>B2</td>
+          <td colspan="2">C2 D2</td>
+        </tr>
+        <tr align="center">
+          <td colspan="2">B3 C3</td>
+          <td>D3</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <center>
+      <h>本網頁由&copy;217所製作及維護。</h5>
+    </center>
+  </footer>
+</body>
+
+</html>
