@@ -1,0 +1,158 @@
+<html>
+
+<head>
+  <title>HTML的基本結構_巢狀表格範例</title>
+</head>
+
+<body>
+  <header>
+    <center>
+      <h1>
+        <font color="#800">HTML的基本結構_巢狀表格範例</font>
+      </h1>
+    </center>
+    <hr>
+  </header>
+  <main>
+    <section>
+      <center>
+        <h2><b><u>巢狀表格範例</u></b></h2>
+      </center>
+    </section>
+    <section>
+      <table width="80%" border="3" cellspacing="1" align="center">
+        <caption>
+          <h3>大小家電各產品銷售統計表</h3>
+        </caption>
+        <thead>
+          <tr>
+            <td colspan="2">主分類</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="10%">大家電</td>
+            <td width="90%">
+              <table border="1" cellspacing="0" width="100%">
+                <thead>
+                  <tr align="center">
+                    <td colspan="2">產品分類/名稱</td>
+                    <td>全年統計</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr align="center">
+                    <td width="20%" rowspan="2">一般家電</td>
+                    <td width="50%">冰箱</td>
+                    <td width="30%">140,000</td>
+                  </tr>
+                  <tr align="center">
+                    <td width="50%">洗衣機</td>
+                    <td width="30%">178,000</td>
+                  <tr align="center">
+                    <td width="20%" rowspan="2">影音視聽</td>
+                    <td width="50%">藍光光碟機</td>
+                    <td width="30%">159,000</td>
+                  </tr>
+                  <tr align="center">
+                    <td width="50%">電視螢幕</td>
+                    <td width="30%">191,000</td>
+                </tbody>
+                <tfoot>
+                  <tr align="center">
+                    <td colspan="2">小計</td>
+                    <td>668,000</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>小家電</td>
+            <td>
+              <table border="1" cellspacing="0" width="100%">
+                <thead>
+                  <tr align="center">
+                    <td colspan="2">產品分類/名稱</td>
+                    <td>全年統計</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr align="center">
+                    <td width="20%" rowspan="3">廚房用家電</td>
+                    <td width="50%">烤箱</td>
+                    <td width="30%">22,000</td>
+                  </tr>
+                  <tr align="center">
+                    <td width="50%">電鍋</td>
+                    <td width="30%">100,000</td>
+                  <tr align="center">
+                    <td width="50%">微波爐</td>
+                    <td width="30%">450,000</td>
+                  <tr align="center">
+                    <td width="20%" rowspan="3">辦公室電器</td>
+                    <td width="50%">檯燈</td>
+                    <td width="30%">130,000</td>
+                  </tr>
+                  <tr align="center">
+                    <td width="50%">影印機</td>
+                    <td width="30%">680,000</td>
+                  </tr>
+                  <tr align="center">
+                    <td width="50%">延長線</td>
+                    <td width="30%">90,000</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr align="center">
+                    <td colspan="2">小計</td>
+                    <td>1,780,000</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>年度統計</td>
+            <td>
+              <table width="100%">
+                <tr>
+                  <td width="20%"></td>
+                  <td width="50%"></td>
+                  <td width="30%">2,448,000</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tfoot>
+        <!-- 大家電
+        產品分類/名稱 全年統計
+        一般
+        家電 冰箱 140,000
+        洗衣機 178,000
+        影音
+        視聽 藍光影音光碟機 159,000
+        電視機 191,000
+        小計 668,000
+        小家電
+        產品分類/名稱 全年統計
+        廚房用家電 烤箱 220,00
+        電鍋 100,000
+        微波爐 450,000
+        辦公室電器 檯燈 130,000
+        影印機 680,000
+        延長線 90,000
+        小計 1,780,000 -->
+      </table>
+    </section>
+  </main>
+  <footer>
+    <center>
+      <h5>本網頁由&copy;阿吉所製作及維護。</h5>
+    </center>
+  </footer>
+</body>
+
+</html>
