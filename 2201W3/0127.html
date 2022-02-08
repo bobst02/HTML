@@ -24,7 +24,15 @@
         <tr align="center">
           <th width="30%">輸入</th>
           <td width="70%" align="left">姓名: <input type="text" name="username" size="40"><br><br>
-          E-mail: <input type="email" name="email" size="40"></td>
+          E-mail: <input type="email" name="email" size="40" placeholder="Email" required></td>
+        </tr>
+        <tr>
+          <th>網址</th>
+          <td align="left">
+            網址:
+            <input type="url" size="50" placeholder="網址">
+            <input type="color" name="color" value="color">
+          </td>
         </tr>
         <tr >
           <th>單選</th>
@@ -36,13 +44,42 @@
             <input type="radio" name="age" value="age5">50以上
           </td>
         </tr>
+        <tr>
+          <th>搜尋輸入</th>
+          <td>商品搜尋
+            <input type="search" name="searching" placeholder="關鍵字" autofocus>
+          </td>
+        </tr>
         <tr align="center">
           <th>複選</th>
           <td align="left">使用過廠牌:
-            <input type="checkbox" name="phone" value="htc">hTC
-            <input type="checkbox" name="phone" value="Apple">Apple
-            <input type="checkbox" name="phone" value="Asus">Asus
-            <input type="checkbox" name="phone" value="Sony">SONY
+            <input type="checkbox" name="phone[]" value="htc">hTC
+            <input type="checkbox" name="phone[]" value="Apple">Apple
+            <input type="checkbox" name="phone[]" value="Asus">Asus
+            <input type="checkbox" name="phone[]" value="Sony">SONY
+          </td>
+        </tr>
+        <tr>
+          <th>下拉式選單</th>
+          <td align="left">業者門號? <br>
+            <select name="userNumber[]" size="4" multiple>
+            <option value="中華電信">中華電信</option>
+            <option value="台灣大哥大">台灣大哥大</option>
+            <option value="遠傳">遠傳</option>
+            <option value="亞太">亞太</option>
+            </select>
+            <select name="Country" multiple>
+              <optgroup label="亞洲">
+                <option label="東京" value="Tk">東京</option>
+                <option label="台北" value="TP">台北</option>
+                <option label="香港" value="HK">香港</option>
+              </optgroup>
+              <optgroup label="歐洲">
+                <option label="倫敦" value="LN">倫敦</option>
+                <option label="巴黎" value="PA">巴黎</option>
+                <option label="維也納" value="VN">維也納</option>
+              </optgroup>
+            </select>
           </td>
         </tr>
         <tr align="center">
