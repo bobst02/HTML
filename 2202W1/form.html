@@ -12,91 +12,170 @@
         <h3>學生知識技能調查表</h3>
       </center>
     </caption>
-    <hr>
-    <form action="" name="form" method="get">
-      <fieldset>
-        <legend>個人基本資料</legend>
-        <label>姓名*：<br>
-          <input type="text" name="name" required placeholder="姓氏與名字">
-        </label><br><br>
-        <label>性別：<br>
-          <input type="radio" name="gender" value="m">男性
-          <input type="radio" name="gender" value="f">女性
-          <input type="radio" name="gender" value="n" checked>保密
-        </label><br><br>
-        <label>出生日期：<br>
-          <input type="date" name="birthday">
-        </label><br><br>
-        <label>Email*：<br>
-          <input type="email" name="email" required placeholder="如:123@amail.com">
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>畢業學校資訊</legend>
-        <label>畢業年月：<br>
-          <input type="month" name="month">
-        </label><br><br>
-        <label>
-          畢業學校*：<br>
-          <input type="text" name="school" required>
-        </label><br><br>
-        <label>畢業學群：<br>
-          <select name="department">
-            <option value="資訊學群">資訊學群</option>
-            <option value="工程學群">工程學群</option>
-            <option value="數理化學群">數理化學群</option>
-            <option value="醫藥衛生學群">醫藥衛生學群</option>
-            <option value="生命科學學群">生命科學學群</option>
-            <option value="生物資源學群">生物資源學群</option>
-            <option value="地球與環境學群">地球與環境學群</option>
-            <option value="建築與設計學群">建築與設計學群</option>
-            <option value="藝術學群">藝術學群</option>
-            <option value="社會與心理學群">社會與心理學群</option>
-            <option value="大眾傳播學群">大眾傳播學群</option>
-            <option value="外語學群">外語學群</option>
-            <option value="文史哲學群">文史哲學群</option>
-            <option value="法政學群">法政學群</option>
-            <option value="管理學群">管理學群</option>
-            <option value="財經學群">財經學群</option>
-            <option value="遊憩與運動學群">遊憩與運動學群</option>
-          </select>
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>其他能力與建議</legend>
-        <label>外文能力：<br>
-          <input type="checkbox" name="le" value="en">英文
-          <input type="checkbox" name="le" value="jp">日文
-          <input type="checkbox" name="le" value="fr">法文
-          <input type="checkbox" name="le" value="de">德文
-          <input type="checkbox" name="le" value="er">其他
-        </label><br><br>
-        <label>擁有證照列表：<br>
-          <select name="license" multiple>
-            <optgroup label="電腦/資訊/網路">
-              <option value="Adobe">Adobe</option>
-              <option value="Linux">Linux</option>
-            </optgroup>
-            <optgroup label="設計/美工">
-              <option value="平面/網頁/多媒體相關證照">平面/網頁/多媒體相關證照</option>
-            </optgroup>
-            <optgroup label="語言能力檢定">
-              <option value="英語/英文證照">英語/英文證照</option>
-              <option value="日語/日文證照">日語/日文證照</option>
-              <option value="中文相關證照">中文相關證照</option>
-            </optgroup>
-          </select>
-        </label><br><br>
-        <label>考取證照年齡：<br>
-          <input type="number" name="age" step="1" min="1" max="200" value="18">
-        </label><br><br>
-        <label>建議：<br>
-          <textarea name="sug" cols="30" rows="10" placeholder="問卷建議或其他意見"></textarea>
-        </label>
-      </fieldset>
-      <input type="submit" value="送出">
-      <input type="reset" value="清除">
-    </form>
+    <hr width="90%">
+    <table width="80%" align="center">
+      <tr>
+        <td>
+          <form action="" name="form" method="get">
+            <fieldset>
+              <legend>
+                <h4>個人基本資料</h4>
+              </legend>
+              <table cellpadding="5" width="70%" align="center">
+                <tr>
+                  <td align="right" width="30%" bgcolor="#e1ebf7">
+                    <font color="red">*</font><b>姓名：</b>
+                  </td>
+                  <td><label>
+                      <input type="text" name="name" required placeholder="姓氏與名字">
+                    </label></td>
+                </tr>
+                <tr>
+                  <td align="right">
+                    <font color="red">*</font><b>性別：</b>
+                  </td>
+                  <td><label>
+                      <input type="radio" name="gender" value="m">男性
+                      <input type="radio" name="gender" value="f">女性
+                      <input type="radio" name="gender" value="n" checked>保密
+                    </label></td>
+                </tr>
+                <tr>
+                  <td align="right" bgcolor="#e1ebf7"><b>出生日期：</b></td>
+                  <td>
+                    <label>
+                      <input type="date" name="birthday">
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><b>Email：</b></td>
+                  <td><label>
+                      <input type="email" name="email" placeholder="如:123@amail.com">
+                    </label>
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+            <fieldset>
+              <legend>
+                <h4>畢業學校資訊</h4>
+              </legend>
+              <table cellpadding="5" width="70%" align="center">
+                <tr>
+                  <td align="right" width="30%" bgcolor="#e1ebf7"><b>畢業年月：</b></td>
+                  <td>
+                    <label>
+                      <input type="month" name="month">
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right">
+                    <font color="red">*</font><b>畢業學校：</b>
+                  </td>
+                  <td>
+                    <label>
+                      <input type="text" name="school" required placeholder="如:OO大學">
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right" bgcolor="#e1ebf7"><b>畢業學群：</b></td>
+                  <td>
+                    <label>
+                      <select name="department">
+                        <option value="資訊學群">資訊學群</option>
+                        <option value="工程學群">工程學群</option>
+                        <option value="數理化學群">數理化學群</option>
+                        <option value="醫藥衛生學群">醫藥衛生學群</option>
+                        <option value="生命科學學群">生命科學學群</option>
+                        <option value="生物資源學群">生物資源學群</option>
+                        <option value="地球與環境學群">地球與環境學群</option>
+                        <option value="建築與設計學群">建築與設計學群</option>
+                        <option value="藝術學群">藝術學群</option>
+                        <option value="社會與心理學群">社會與心理學群</option>
+                        <option value="大眾傳播學群">大眾傳播學群</option>
+                        <option value="外語學群">外語學群</option>
+                        <option value="文史哲學群">文史哲學群</option>
+                        <option value="法政學群">法政學群</option>
+                        <option value="管理學群">管理學群</option>
+                        <option value="財經學群">財經學群</option>
+                        <option value="遊憩與運動學群">遊憩與運動學群</option>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+            <fieldset>
+              <legend>
+                <h4>其他能力與建議</h4>
+              </legend>
+              <table cellpadding="5" width="70%" align="center">
+                <tr>
+                  <td align="right" width="30%" bgcolor="#e1ebf7"><b>外文能力：</b></td>
+                  <td>
+                    <label>
+                      <input type="checkbox" name="le[]" value="en">英文
+                      <input type="checkbox" name="le[]" value="jp">日文
+                      <input type="checkbox" name="le[]" value="fr">法文
+                      <input type="checkbox" name="le[]" value="de">德文
+                      <input type="checkbox" name="le[]" value="er">其他
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><b>擁有證照列表：</b></td>
+                  <td>
+                    <label>
+                      <select name="license[]" multiple>
+                        <optgroup label="電腦/資訊/網路">
+                          <option value="Adobe">Adobe</option>
+                          <option value="Linux">Linux</option>
+                        </optgroup>
+                        <optgroup label="設計/美工">
+                          <option value="平面/網頁/多媒體相關證照">平面/網頁/多媒體相關證照</option>
+                        </optgroup>
+                        <optgroup label="語言能力檢定">
+                          <option value="英語/英文證照">英語/英文證照</option>
+                          <option value="日語/日文證照">日語/日文證照</option>
+                          <option value="中文相關證照">中文相關證照</option>
+                        </optgroup>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right" bgcolor="#e1ebf7"><b>考取證照年齡：</b></td>
+                  <td>
+                    <label>
+                      <input type="number" name="age" step="1" min="1" max="200" value="18">
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><b>建議：</b></td>
+                  <td>
+                    <label>
+                      <textarea name="sug" cols="30" rows="10" placeholder="問卷建議或其他意見"></textarea>
+                    </label>
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+            <table align="center" cellpadding="10" width="70%">
+              <tr>
+                <td align="center">
+                  <input style="width: 50px;height: 30px" type="submit" value="送出">　　
+                  <input style="width: 50px;height: 30px" type="reset" value="清除">
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </table>
   </section>
 </body>
 
