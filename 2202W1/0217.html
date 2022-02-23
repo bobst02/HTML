@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <style>
+    ol.lower-alpha{
+      list-style: lower-alpha;
+    }
+    ol.lower-greek{
+      list-style: lower-greek;
+    }
+    ul.po-in {
+      list-style-image: url(./tiny-push-pin.png);
+      list-style-position: inside;
+    }
+
+    ul.po-out {
+      list-style-image: url(./mouse-pointer.png);
+      list-style-position: outside;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><center>CSS基礎_list清單</center></h1>
+    <hr>
+  </header>
+  <main>
+    <section>
+      <h3>清單內外混搭</h3>
+      <ul class="po-out">
+        <li>金庸小說1</li>
+      </ul>
+      <ul class="po-in">
+        <li>射鵰英雄傳</li>
+        <li>天龍八部</li>
+      </ul>
+      <ul class="po-out">
+        <li>金庸小說2</li>
+      </ul>
+      <ul class="po-in">
+        <li>倚天屠龍記</li>
+        <li>鹿鼎記</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+
+</html>

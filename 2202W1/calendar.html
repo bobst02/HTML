@@ -1,0 +1,284 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>2022年二月與三月月曆</title>
+  <style>
+    body {
+      font-family: "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
+    }
+
+    h1 {
+      /* 標題文字樣式 */
+      color: blue;
+      font-size: 26pt;
+      text-align: center;
+    }
+
+    div {
+      padding: 30px;
+      width: 90%;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    table {
+      width: 40%;
+      height: 300px;
+      float: left;
+      margin: 50px;
+      border-spacing: 7px;
+      text-align: right;
+      empty-cells: hide;
+      box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+    }
+
+    table.feb {
+      background-color: rgb(153, 198, 228);
+    }
+
+    table.feb th {
+      background-color: rgb(91, 157, 211);
+
+
+    }
+    table.mar {
+      background-color: rgb(153, 228, 163);
+    }
+    table.mar th {
+      background-color: rgb(91, 211, 97);
+
+    }
+    tr.month {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+    }
+
+    th {
+      text-align: center;
+    }
+
+    td {
+      padding: 5px;
+      background-color: rgb(255, 255, 255);
+    }
+    .memo1{
+      width: 20%;
+      height: 250px;
+      float: right;
+      margin: 50px;
+      border-radius: 10px;
+      background-image: linear-gradient(#99c6e4,#ffff);
+      box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+    }
+    .memo1 p{
+      position: absolute;
+      font-size: 30px;
+      text-align: center;
+      position: relative;
+      margin: 0px;
+      text-transform: uppercase;
+    }
+    .memo2{
+      width: 20%;
+      height: 250px;
+      border-radius: 10px;
+      float: right;
+      margin: 50px;
+      background-image: linear-gradient(#99e4a3,#ffff);
+      box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+    }
+    .memo2 p{
+      position: absolute;
+      font-size: 30px;
+      text-align: center;
+      position: relative;
+      margin: 0px;
+      text-transform: uppercase;
+    }
+    ul.out{
+      list-style-position: outside;
+      font-size: 16px;
+      font-weight: bold;
+      list-style-image: url(./tiny-push-pin.png);
+    }
+    ul.in{
+      list-style-position: inside;
+      font-size: 14px;
+      list-style-image: url(./check.png);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CSS表格樣式練習作業</h1>
+    <hr>
+  </header>
+  <main>
+    <div class="feb">
+      <table class="feb">
+        <tr class="month">
+          <td colspan="7">2月</td>
+        </tr>
+        <tr>
+          <th>日</th>
+          <th>一</th>
+          <th>二</th>
+          <th>三</th>
+          <th>四</th>
+          <th>五</th>
+          <th>六</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>28</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <div class="memo1">
+        <p>memo</p>
+        <ul class="out">
+          <li>2/10~2/16</li>
+        </ul>
+        <ul class="in">
+          <li>過年春節</li>
+        </ul>
+        <ul class="out">
+          <li>2/15</li>
+        </ul>
+        <ul class="in">
+          <li>元宵節</li>
+        </ul>
+        <ul class="out">
+          <li >2/27~3/1</li>
+        </ul>
+        <ul class="in">
+          <li>二二八連假</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mar">
+      <table class="mar">
+        <tr class="month">
+          <td colspan="7">3月</td>
+        </tr>
+        <tr>
+          <th>日</th>
+          <th>一</th>
+          <th>二</th>
+          <th>三</th>
+          <th>四</th>
+          <th>五</th>
+          <th>六</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <div class="memo2">
+        <p>memo</p>
+        <ul class="out">
+          <li>3/8</li>
+        </ul>
+        <ul class="in">
+          <li>婦女節</li>
+        </ul>
+        <ul class="out">
+          <li>3/12</li>
+        </ul>
+        <ul class="in">
+          <li>植樹節</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer>
+  </footer>
+</body>
+
+</html>

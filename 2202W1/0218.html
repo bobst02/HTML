@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Document</title>
+  <style>
+    h1 {
+      color: blue;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    caption {
+      color: blue;
+      font-size: 22px;
+      caption-side: bottom;
+      padding-top: 5px;
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      height: 200px;
+    }
+
+    td,
+    th {
+      padding: 7px 10px 10px 10px;
+    }
+
+    th {
+      background-color: rgb(54, 124, 190);
+    }
+
+    tr {
+      background-color: rgb(187, 205, 230);
+    }
+
+    tr:nth-child(even) {
+      background-color: #eceff0;
+    }
+    .table2{
+      width: 90%;
+      height: 40%;
+      margin-left: 5%;
+      margin-right: 5%;
+      border: 3px solid;
+      border-collapse: separate;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>table練習</h1>
+    <hr>
+  </header>
+  <main>
+    <section>
+      <h3>表格樣式範例1</h3>
+      <table>
+        <caption>各分店資料列表</caption>
+        <tr>
+          <!-- 表頭列 -->
+          <th>店名</th>
+          <th>地址</th>
+          <th>營業時間</th>
+        </tr>
+        <tr>
+          <!-- 各家分店資訊 -->
+          <td>中正店</td>
+          <td>台南市中正路100號</td>
+          <td rowspan="2">10:00-22:00</td>
+        </tr>
+        <tr>
+          <!-- 各家分店資訊 -->
+          <td>中山店</td>
+          <td>台南市中山路30號</td>
+        </tr>
+        <tr>
+          <!-- 各家分店資訊 -->
+          <td>新市店</td>
+          <td>台南市新市區新市路2號</td>
+          <td>11:00-22:30</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <hr>
+      <h3>表格樣式範例2</h3>
+      <table class="table2">
+        <caption>各分店資料列表2</caption>
+        <tr>
+          <!-- 表頭列 -->
+          <th>店名</th>
+          <th>地址</th>
+          <th>營業時間</th>
+        </tr>
+        <tr>
+          <!-- 各家分店資訊 -->
+          <td>中正店</td>
+          <td>台南市中正路100號</td>
+          <td rowspan="2">10:00-22:00</td>
+        </tr>
+        <tr>
+          <!-- 各家分店資訊 -->
+          <td>中山店</td>
+          <td>台南市中山路30號</td>
+        </tr>
+        <tr>
+          <!-- 各家分店資訊 -->
+          <td>新市店</td>
+          <td>台南市新市區新市路2號</td>
+          <td>11:00-22:30</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+</body>
+
+</html>
