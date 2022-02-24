@@ -15,16 +15,24 @@
       text-align: center;
     }
 
-    div {
+    div.feb {
       padding: 30px;
-      width: 90%;
+      width: 85%;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div.mar {
+      padding: 30px;
+      width: 85%;
       height: 400px;
       margin-left: auto;
       margin-right: auto;
     }
 
     table {
-      width: 40%;
+      width: 45%;
       height: 300px;
       float: left;
       margin: 50px;
@@ -40,17 +48,17 @@
 
     table.feb th {
       background-color: rgb(91, 157, 211);
-
-
     }
+
     table.mar {
       background-color: rgb(153, 228, 163);
     }
+
     table.mar th {
       background-color: rgb(91, 211, 97);
-
     }
-    tr.month {
+
+    td.month {
       font-size: 20px;
       font-weight: bold;
       letter-spacing: 0.2em;
@@ -61,19 +69,58 @@
     }
 
     td {
+      width: 7%;
+      height: 35px;
       padding: 5px;
       background-color: rgb(255, 255, 255);
     }
-    .memo1{
-      width: 20%;
-      height: 250px;
-      float: right;
+
+    td:hover {
+      color: rgb(247, 158, 41);
+      border-radius: 15px;
+      transition-duration: .5s;
+    }
+
+    td.fdate {
+      background-color: #cae3f3;
+    }
+
+    td.mdate {
+      background-color: #d1f3ca;
+    }
+
+    .memo1 {
+      width: 25%;
+      height: 270px;
+      float: left;
       margin: 50px;
       border-radius: 10px;
-      background-image: linear-gradient(#99c6e4,#ffff);
+      background-image: linear-gradient(#99c6e4, #ffff);
       box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+      padding: 25px;
     }
-    .memo1 p{
+
+    .memo1 p {
+      position: relative;
+      font-size: 30px;
+      text-align: center;
+      position: relative;
+      margin: 0px;
+      text-transform: uppercase;
+    }
+
+    .memo2 {
+      width: 25%;
+      height: 270px;
+      float: left;
+      margin: 50px;
+      border-radius: 10px;
+      background-image: linear-gradient(#99e4a3, #ffff);
+      box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+      padding: 25px;
+    }
+
+    .memo2 p {
       position: absolute;
       font-size: 30px;
       text-align: center;
@@ -81,33 +128,22 @@
       margin: 0px;
       text-transform: uppercase;
     }
-    .memo2{
-      width: 20%;
-      height: 250px;
-      border-radius: 10px;
-      float: right;
-      margin: 50px;
-      background-image: linear-gradient(#99e4a3,#ffff);
-      box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
-    }
-    .memo2 p{
-      position: absolute;
-      font-size: 30px;
-      text-align: center;
-      position: relative;
-      margin: 0px;
-      text-transform: uppercase;
-    }
-    ul.out{
+
+    ul.out {
       list-style-position: outside;
       font-size: 16px;
       font-weight: bold;
       list-style-image: url(./tiny-push-pin.png);
     }
-    ul.in{
+
+    ul.in {
       list-style-position: inside;
       font-size: 14px;
       list-style-image: url(./check.png);
+    }
+
+    ul.in:hover {
+      color: rgb(247, 158, 41);
     }
   </style>
 </head>
@@ -120,8 +156,8 @@
   <main>
     <div class="feb">
       <table class="feb">
-        <tr class="month">
-          <td colspan="7">2月</td>
+        <tr>
+          <td class="month" colspan="7">2022年2月</td>
         </tr>
         <tr>
           <th>日</th>
@@ -135,42 +171,42 @@
         <tr>
           <td></td>
           <td></td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
+          <td class="fdate">1</td>
+          <td class="fdate"> 2</td>
+          <td class="fdate">3</td>
+          <td class="fdate">4</td>
+          <td class="fdate">5</td>
         </tr>
         <tr>
-          <td>6</td>
+          <td class="fdate">6</td>
           <td>7</td>
           <td>8</td>
           <td>9</td>
-          <td>10</td>
-          <td>11</td>
-          <td>12</td>
+          <td >10</td>
+          <td >11</td>
+          <td class="fdate">12</td>
         </tr>
         <tr>
-          <td>13</td>
+          <td class="fdate">13</td>
           <td>14</td>
           <td>15</td>
           <td>16</td>
           <td>17</td>
           <td>18</td>
-          <td>19</td>
+          <td class="fdate">19</td>
         </tr>
         <tr>
-          <td>20</td>
+          <td class="fdate">20</td>
           <td>21</td>
           <td>22</td>
           <td>23</td>
           <td>24</td>
           <td>25</td>
-          <td>26</td>
+          <td class="fdate">26</td>
         </tr>
         <tr>
-          <td>27</td>
-          <td>28</td>
+          <td class="fdate">27</td>
+          <td class="fdate">28</td>
           <td></td>
           <td></td>
           <td></td>
@@ -181,7 +217,7 @@
       <div class="memo1">
         <p>memo</p>
         <ul class="out">
-          <li>2/10~2/16</li>
+          <li>1/29~2/6</li>
         </ul>
         <ul class="in">
           <li>過年春節</li>
@@ -193,7 +229,7 @@
           <li>元宵節</li>
         </ul>
         <ul class="out">
-          <li >2/27~3/1</li>
+          <li>2/26~2/28</li>
         </ul>
         <ul class="in">
           <li>二二八連假</li>
@@ -202,8 +238,8 @@
     </div>
     <div class="mar">
       <table class="mar">
-        <tr class="month">
-          <td colspan="7">3月</td>
+        <tr>
+          <td class="month" colspan="7">2022年3月</td>
         </tr>
         <tr>
           <th>日</th>
@@ -221,37 +257,37 @@
           <td>2</td>
           <td>3</td>
           <td>4</td>
-          <td>5</td>
+          <td class="mdate">5</td>
         </tr>
         <tr>
-          <td>6</td>
+          <td class="mdate">6</td>
           <td>7</td>
           <td>8</td>
           <td>9</td>
           <td>10</td>
           <td>11</td>
-          <td>12</td>
+          <td class="mdate">12</td>
         </tr>
         <tr>
-          <td>13</td>
+          <td class="mdate">13</td>
           <td>14</td>
           <td>15</td>
           <td>16</td>
           <td>17</td>
           <td>18</td>
-          <td>19</td>
+          <td class="mdate">19</td>
         </tr>
         <tr>
-          <td>20</td>
+          <td class="mdate">20</td>
           <td>21</td>
           <td>22</td>
           <td>23</td>
           <td>24</td>
           <td>25</td>
-          <td>26</td>
+          <td class="mdate">26</td>
         </tr>
         <tr>
-          <td>27</td>
+          <td class="mdate">27</td>
           <td>28</td>
           <td>29</td>
           <td>30</td>
